@@ -20,26 +20,37 @@ public class LidlPage {
     @FindBy (className = "cookie-alert-extended-button")
     public WebElement zustimmenButton;
 
+    @FindBy(xpath = "//ol[@class='n-header__main-navigation n-header__navigation-list n-header__subnavigation-list']")
+    public WebElement startSeiteMenuKopfZeile;
+
     @FindBy(xpath = "//ol[@class='n-header__main-navigation n-header__navigation-list n-header__subnavigation-list']//span")
     public List<WebElement> menuOptions;
 
     @FindBy(xpath = "//ol[@class='n-header__user-navigation']//a")
     public List<WebElement> topMenu;
-
     @FindBy(id = "field_EmailOrPhone")
     public WebElement emailOderHandyNummerTextFeld;
-
     @FindBy(id = "button_btn_submit_email")
     public WebElement einloggenWeiterButton;
+
+    @FindBy(id = "button_submit")
+    public WebElement passwortWeiterButton;
+
+    @FindBy(xpath = "//*[text()=' Zurück ']")
+    public WebElement passwortZurückButton;
+
+    @FindBy(xpath = "//*[text()='Passwort vergessen?']")
+    public WebElement passwortVergessenButton;
 
     @FindBy(className = "error_EmailOrPhone")
     public WebElement error_EmailOrPhoneMeldung;
 
-    @FindBy(xpath = "//div[@class='Du wurdest erfolgreich angemeldet.']")
+    @FindBy(xpath = "//*[text()='Du wurdest erfolgreich angemeldet.']")
     public WebElement erfolgreichMessage;
 
     @FindBy(className = "error_Password")
     public WebElement errorPaswortMessage;
+
 
     @FindBy(xpath = "//a[text()='Registrieren']")
     public WebElement registirierenButton;

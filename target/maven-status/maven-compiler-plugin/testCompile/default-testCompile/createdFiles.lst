@@ -1,0 +1,8 @@
+runners\ParalelTestRunner.class
+stepdefinitions\MyStepdefs.class
+stepdefinitions\Hooks.class
+utilities\ConfigReader.class
+pages\LidlPage.class
+runners\Runner.class
+utilities\Driver.class
+stepdefinitions\LoginStepDefinition.class

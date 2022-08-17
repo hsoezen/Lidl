@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
                 "junit:target/xml-report/cucumberPrl.xml"},
         features = "src/test/resources/UIFeatures",
         glue = "stepdefinitions",
-        tags = "@Paralel",
+        tags = "@paralel",
         dryRun = false
 )
 

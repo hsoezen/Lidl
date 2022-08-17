@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="4.841">
-<testcase classname="Zur Lidl-Startseite navigieren" name="TC_001 Der User kann zur Lidl-Startseite navigieren" time="4.757">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="10.997">
+<testcase classname="Zur Lidl-Startseite navigieren" name="TC_001 Der User kann zur Lidl-Startseite navigieren" time="10.901">
 <system-out><![CDATA[When Der User open Lidl-StartSite "Lidl_Startseite" link....................passed
 And Die Startseite_Menu wird angezeigt......................................passed
 Then Der user schliesst Window..............................................passed
