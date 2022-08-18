@@ -4,6 +4,7 @@ Feature: Als a User soll ich mich bei meinem Konto anmelden
   Background:
     When Der User open Lidl-StartSite "Lidl_Startseite" link
     And Der User klickt auf Mein Konto-Button.
+    And Der User klickt auf Zustimmen-Button.
 
   Scenario: TC_001 Der User kann sich mit gueltigen Daten anmelden.
     And Der User gibt eine gueltige "Email_Adresse" in das Email-Handynummer-Textfeld ein.

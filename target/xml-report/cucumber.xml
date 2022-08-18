@@ -1,9 +1,63 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="10.997">
-<testcase classname="Zur Lidl-Startseite navigieren" name="TC_001 Der User kann zur Lidl-Startseite navigieren" time="10.901">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="76.959">
+<testcase classname="Das Paswort soll gemaess der Passwortanleitung sein." name="TC_002 Wenn das Passwort die Bedingungen nicht erfüllt, sieht der User die Bedingung ROT." time="13.929">
 <system-out><![CDATA[When Der User open Lidl-StartSite "Lidl_Startseite" link....................passed
-And Die Startseite_Menu wird angezeigt......................................passed
-Then Der user schliesst Window..............................................passed
+And Der User klickt auf Zustimmen-Button....................................passed
+And Der User klickt auf Mein Konto-Button...................................passed
+And Der User klickt auf Registirieren_button................................passed
+And Der User gibt eine gueltige "Email_adresse_Registirierung" Email-Adresse in das Email-Textfeld ein..passed
+And Der User gibt gleiche "Email_adresse_Registirierung" Email-Adresse" in das Email-Bestaetigung-Textfeld ein..passed
+And Der User gibt ein Paswort "Hs.123456" ein...............................passed
+And Der User klickt auf Registirierung-Weiter-Button........................passed
+Then Der User sieht, dass die 2 rot wird....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Das Paswort soll gemaess der Passwortanleitung sein." name="TC_002 Wenn das Passwort die Bedingungen nicht erfüllt, sieht der User die Bedingung ROT. 2" time="16.657">
+<system-out><![CDATA[When Der User open Lidl-StartSite "Lidl_Startseite" link....................passed
+And Der User klickt auf Zustimmen-Button....................................passed
+And Der User klickt auf Mein Konto-Button...................................passed
+And Der User klickt auf Registirieren_button................................passed
+And Der User gibt eine gueltige "Email_adresse_Registirierung" Email-Adresse in das Email-Textfeld ein..passed
+And Der User gibt gleiche "Email_adresse_Registirierung" Email-Adresse" in das Email-Bestaetigung-Textfeld ein..passed
+And Der User gibt ein Paswort "HS.1234567" ein..............................passed
+And Der User klickt auf Registirierung-Weiter-Button........................passed
+Then Der User sieht, dass die 3 rot wird....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Das Paswort soll gemaess der Passwortanleitung sein." name="TC_002 Wenn das Passwort die Bedingungen nicht erfüllt, sieht der User die Bedingung ROT. 3" time="23.607">
+<system-out><![CDATA[When Der User open Lidl-StartSite "Lidl_Startseite" link....................passed
+And Der User klickt auf Zustimmen-Button....................................passed
+And Der User klickt auf Mein Konto-Button...................................passed
+And Der User klickt auf Registirieren_button................................passed
+And Der User gibt eine gueltige "Email_adresse_Registirierung" Email-Adresse in das Email-Textfeld ein..passed
+And Der User gibt gleiche "Email_adresse_Registirierung" Email-Adresse" in das Email-Bestaetigung-Textfeld ein..passed
+And Der User gibt ein Paswort "hs.1234567" ein..............................passed
+And Der User klickt auf Registirierung-Weiter-Button........................passed
+Then Der User sieht, dass die 4 rot wird....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Das Paswort soll gemaess der Passwortanleitung sein." name="TC_002 Wenn das Passwort die Bedingungen nicht erfüllt, sieht der User die Bedingung ROT. 4" time="12.578">
+<system-out><![CDATA[When Der User open Lidl-StartSite "Lidl_Startseite" link....................passed
+And Der User klickt auf Zustimmen-Button....................................passed
+And Der User klickt auf Mein Konto-Button...................................passed
+And Der User klickt auf Registirieren_button................................passed
+And Der User gibt eine gueltige "Email_adresse_Registirierung" Email-Adresse in das Email-Textfeld ein..passed
+And Der User gibt gleiche "Email_adresse_Registirierung" Email-Adresse" in das Email-Bestaetigung-Textfeld ein..passed
+And Der User gibt ein Paswort "Hs.wertzuh" ein..............................passed
+And Der User klickt auf Registirierung-Weiter-Button........................passed
+Then Der User sieht, dass die 5 rot wird....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Das Paswort soll gemaess der Passwortanleitung sein." name="TC_002 Wenn das Passwort die Bedingungen nicht erfüllt, sieht der User die Bedingung ROT. 5" time="10.056">
+<system-out><![CDATA[When Der User open Lidl-StartSite "Lidl_Startseite" link....................passed
+And Der User klickt auf Zustimmen-Button....................................passed
+And Der User klickt auf Mein Konto-Button...................................passed
+And Der User klickt auf Registirieren_button................................passed
+And Der User gibt eine gueltige "Email_adresse_Registirierung" Email-Adresse in das Email-Textfeld ein..passed
+And Der User gibt gleiche "Email_adresse_Registirierung" Email-Adresse" in das Email-Bestaetigung-Textfeld ein..passed
+And Der User gibt ein Paswort "Hs12345678" ein..............................passed
+And Der User klickt auf Registirierung-Weiter-Button........................passed
+Then Der User sieht, dass die 6 rot wird....................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
