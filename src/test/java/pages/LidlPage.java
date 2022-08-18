@@ -30,11 +30,11 @@ public class LidlPage {
     public List<WebElement> topMenu;
     @FindBy(id = "field_EmailOrPhone")
     public WebElement emailOderHandyNummerTextFeld;
-    @FindBy(id = "button_btn_submit_email")
-    public WebElement einloggenWeiterButton;
+    @FindBy(xpath = "//*[text()=' Weiter ']")
+    public WebElement weiterButton;
 
     @FindBy(id = "button_submit")
-    public WebElement passwortWeiterButton;
+    public WebElement weiterButtonPassword;
 
     @FindBy(xpath = "//*[text()=' Zurück ']")
     public WebElement passwortZurückButton;
@@ -64,11 +64,11 @@ public class LidlPage {
     @FindBy(id = "field_Password")
     public WebElement registirierungPaswortTextFeld;
 
+    @FindBy(xpath = "//*[text()='Weiter']")
+    public WebElement weiterButtonRegistirierung;
+
     @FindBy(xpath = "//div[@class='password-creator']//p")
     public List<WebElement> paswortKreator;
-
-    @FindBy(xpath = "//*[text()='Weiter']")
-    public WebElement registirierungWeiterButton;
 
     @FindBy(className = "eye-icon")
     public WebElement eyeIcon;
@@ -78,12 +78,48 @@ public class LidlPage {
 
     @FindBy(xpath = "//*[text()=' Zurück ']")
     public WebElement bestaetigungEmailZurueckButton;
-
     @FindBy(id = "EmailVerificationCode")
     public WebElement emailVerificationCodeTextFeld;
 
     @FindBy(className = "error_EmailVerificationCode")
     public WebElement errorEmailVerificationMessage;
+
+    @FindBy(xpath = "//*[text()='Wir haben dir gerade eine E-Mail gesendet']")
+    public WebElement gesendeteEmailMeldungRegistirierung;
+    @FindBy(id = "field_EmailVerificationCode")
+    public WebElement verificationCodeTextFeld;
+
+//Erfolgreiches Passwort
+    @FindBy(xpath = "(//div[@class='password-creator']//*[@width='60px'])[2]//*[@fill='#348553']")
+    public WebElement mindestens_10_Zeichnen_erfolgreiches_Passwort;
+
+    @FindBy(xpath = "(//div[@class='password-creator']//*[@width='60px'])[3]//*[@fill='#348553']")
+    public WebElement mindestens_1_Kleinbuchstabe_erfolgreiches_Passwort;
+
+    @FindBy(xpath = "(//div[@class='password-creator']//*[@width='60px'])[4]//*[@fill='#348553']")
+    public WebElement mindestens_1_Grossbuchstabe_erfolgreiches_Passwort;
+
+    @FindBy(xpath = "(//div[@class='password-creator']//*[@width='60px'])[5]//*[@fill='#348553']")
+    public WebElement mindestens_1_Zahl_erfolgreiches_Passwort;
+
+    @FindBy(xpath = "(//div[@class='password-creator']//*[@width='60px'])[6]//*[@fill='#348553']")
+    public WebElement mindestens_1_Sonderzeichen_erfolgreiches_Passwort;
+
+//Fehlendes Passwort
+    @FindBy(xpath = "(//div[@class='password-creator']//*[@width='60px'])[2]//*[@fill='#e60a14']")
+    public WebElement mindestens_10_Zeichnen_fehlendes_Passwort;
+
+    @FindBy(xpath = "(//div[@class='password-creator']//*[@width='60px'])[3]//*[@fill='#e60a14']")
+    public WebElement mindestens_1_Kleinbuchstabe_fehlendes_Passwort;
+
+    @FindBy(xpath = "(//div[@class='password-creator']//*[@width='60px'])[4]//*[@fill='#e60a14']")
+    public WebElement mindestens_1_Grossbuchstabe_fehlendes_Passwort;
+
+    @FindBy(xpath = "(//div[@class='password-creator']//*[@width='60px'])[5]//*[@fill='#e60a14']")
+    public WebElement mindestens_1_Zahl_fehlendes_Passwort;
+
+    @FindBy(xpath = "(//div[@class='password-creator']//*[@width='60px'])[6]//*[@fill='#e60a14']")
+    public WebElement mindestens_1_Sonderzeichen_fehlendes_Passwort;
 
 
 
