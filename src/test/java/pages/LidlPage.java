@@ -3,6 +3,7 @@ package pages;
 import org.openqa.selenium.WebDriver;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -38,10 +39,6 @@ public class LidlPage {
 
     @FindBy(xpath = "//*[text()=' Zurück ']")
     public WebElement passwortZurückButton;
-
-    @FindBy(xpath = "//*[text()='Passwort vergessen?']")
-    public WebElement passwortVergessenButton;
-
     @FindBy(className = "error_EmailOrPhone")
     public WebElement error_EmailOrPhoneMeldung;
 
@@ -120,6 +117,42 @@ public class LidlPage {
 
     @FindBy(xpath = "(//div[@class='password-creator']//*[@width='60px'])[6]//*[@fill='#e60a14']")
     public WebElement mindestens_1_Sonderzeichen_fehlendes_Passwort;
+
+    @FindBy(xpath = "//div[@class='input active text']")
+    public WebElement inputActivTextPasswort;
+
+    @FindBy(xpath = "//div[@class='input active password']")
+    public WebElement inputActivPasswortAusgeblendet;
+
+    @FindBy(xpath = "//div[@class='input checkbox']")
+    public WebElement checkBoxDiesesGeraetMerken;
+
+    @FindBy(xpath = "//div[@class='hook-border']")
+    public WebElement KontrollKaestchen;
+
+    @FindBy(xpath = "//*[text()='Passwort vergessen?']")
+    public WebElement passwortVergessenButton;
+
+    @FindBy(xpath = "//*[text()='SMS erhalten']")
+    public WebElement SMSErhaltenButton;
+
+    @FindBy(xpath = "//*[text()='E-Mail erhalten']")
+    public WebElement EmailErhaltenButton;
+
+    @FindBy(id = "field_PhoneNumber")
+    public  WebElement TelefonNummerTextFeld;
+
+    @FindBy(xpath = "//p[@class='error_PhoneNumber']")
+    public WebElement ungueltigeHandyNummerMeldung;
+
+    @FindBy(xpath = "(//h2)[1]")
+    public WebElement gesendeteEmailMeldung;
+
+    @FindBy(id = "field_EmailVerificationCode")
+    public WebElement EmailVerifikationCodeTextfeld;
+
+    @FindBy(className = "error_EmailVerificationCode")
+    public WebElement ungueltigeEmailCodeMeldung;
 
 
 
