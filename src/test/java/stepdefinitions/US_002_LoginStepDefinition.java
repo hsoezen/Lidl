@@ -90,4 +90,84 @@ public class US_002_LoginStepDefinition {
         Assert.assertTrue(lidlPage.errorPaswortMessage.isDisplayed());
         System.out.println(lidlPage.errorPaswortMessage.getText());
     }
+
+    @And("Der User klickt auf EYE-ICON.")
+    public void derUserKlicktAufEYEICON() throws InterruptedException {
+        lidlPage.eyeIcon.click();
+
+
+    }
+
+    @Then("Der User sieht sein Passwort.")
+    public void derUserSiehtSeinPasswort() throws InterruptedException {
+        Assert.assertTrue(lidlPage.inputActivTextPasswort.isDisplayed());
+
+    }
+
+    @Then("Der User sieht sein Passwort als Sterne.")
+    public void derUserSiehtSeinPasswortAlsSterne() throws InterruptedException {
+        Assert.assertTrue(lidlPage.inputActivPasswortAusgeblendet.isDisplayed());
+    }
+
+    @And("Der User klickt auf das Kontrollkaestchen.")
+    public void derUserKlicktAufDasKontrollkaestchen() {
+        lidlPage.checkBoxDiesesGeraetMerken.click();
+    }
+
+    @Then("Der User sieht, dass Kontrollkaestchen abgehakt ist.")
+    public void derUserSiehtDassKontrollkaestchenAbgehaktIst() {
+        Assert.assertTrue(lidlPage.KontrollKaestchen.isDisplayed());
+    }
+
+    @And("Der User klickt auf PasswortVergessen_Button.")
+    public void derUserKlicktAufPasswortVergessen_Button() {
+        lidlPage.passwortVergessenButton.click();
+    }
+
+    @And("Der User klict auf SMS erhalten-Button.")
+    public void derUserKlictAufSMSErhaltenButton() {
+        lidlPage.SMSErhaltenButton.click();
+    }
+
+    @And("Der User gibt seine Telefonnummer {string} in das Telefonnummertextfeld ein.")
+    public void derUserGibtSeineTelefonnummerInDasTelefonnummertextfeldEin(String arg0) {
+        lidlPage.TelefonNummerTextFeld.sendKeys(ConfigReader.getProperty(arg0));
+    }
+
+    @And("Der User gibt die Verifikationnummer in das Textfeld ein.")
+    public void derUserGibtDieVerifikationnummerInDasTextfeldEin() {
+
+    }
+
+    @And("Der User gibt eine ungueltige Telefonnummer {string} in das Telefonnummertextfeld ein.")
+    public void derUserGibtEineFalscheTelefonnummerInDasTelefonnummertextfeldEin(String arg0) {
+        lidlPage.TelefonNummerTextFeld.sendKeys(ConfigReader.getProperty(arg0));
+    }
+
+    @Then("Der User sieht ungueltige Handynummer-Meldung {string}.")
+    public void derUserSiehtUngueltigeHandynummerMeldung(String arg0) {
+        Assert.assertTrue(lidlPage.ungueltigeHandyNummerMeldung.isDisplayed());
+        Assert.assertEquals(ConfigReader.getProperty(arg0), lidlPage.ungueltigeHandyNummerMeldung.getText());
+    }
+
+    @And("Der User klict auf Email erhalten-Button.")
+    public void derUserKlictAufEmailErhaltenButton() {
+        lidlPage.EmailErhaltenButton.click();
+    }
+
+    @And("Der User gibt {string} in das Email Verifikation Textfeld ein.")
+    public void derUserGibtInDasEmailVerifikationTextfeldEin(String arg0) {
+
+
+    }
+
+    @And("Der User gibt eine ungueltige Code {string} in das Emailbestaetigungstextfeld ein.")
+    public void derUserGibtEineUngueltigeCodeInDasEmailbestaetigungstextfeldEin(String arg0) {
+        lidlPage.EmailVerifikationCodeTextfeld.sendKeys(ConfigReader.getProperty(arg0));
+    }
+
+    @Then("Der User sieht ungueltige EmailCode-Meldung {string}.")
+    public void derUserSiehtUngueltigeEmailCodeMeldung(String arg0) {
+        Assert.assertEquals(ConfigReader.getProperty(arg0), lidlPage.ungueltigeEmailCodeMeldung.getText());
+    }
 }
