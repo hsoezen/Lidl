@@ -9,7 +9,7 @@ Feature: Das Paswort soll gemaess der Passwortanleitung sein.
 
 
   Scenario Outline:
-    When Der User open Lidl-StartSite "Lidl_Startseite" link
+    When Der User oeffnet Lidl-StartSite "Lidl_Startseite" link
     And Der User klickt auf Zustimmen-Button.
     And Der User klickt auf Mein Konto-Button.
     And Der User klickt auf Registirieren_button.
@@ -36,7 +36,7 @@ Feature: Das Paswort soll gemaess der Passwortanleitung sein.
   @password
   Scenario Outline: TC_002 Wenn das Passwort die Bedingungen nicht erfüllt, sieht der User die Bedingung ROT.
 
-    When Der User open Lidl-StartSite "Lidl_Startseite" link
+    When Der User oeffnet Lidl-StartSite "Lidl_Startseite" link
     And Der User klickt auf Zustimmen-Button.
     And Der User klickt auf Mein Konto-Button.
     And Der User klickt auf Registirieren_button.

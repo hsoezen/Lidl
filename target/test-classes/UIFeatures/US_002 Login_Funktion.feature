@@ -1,7 +1,7 @@
 Feature: Als a User soll ich mich bei meinem Konto anmelden
 
   Background:
-    When Der User open Lidl-StartSite "Lidl_Startseite" link
+    When Der User oeffnet Lidl-StartSite "Lidl_Startseite" link
     And Der User klickt auf Zustimmen-Button.
     And Der User klickt auf Mein Konto-Button.
 

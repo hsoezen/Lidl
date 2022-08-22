@@ -3,15 +3,15 @@ package stepdefinitions;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import pages.LidlPage;
+import pages.LidlLoginPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
 public class US_003_RegistirierungStepDefinition {
 
-    LidlPage lidlPage = new LidlPage();
+    LidlLoginPage lidlPage = new LidlLoginPage();
 
-    @When("Der User open Lidl-StartSite {string} link")
+    @When("Der User oeffnet Lidl-StartSite {string} link")
     public void derUserOpenLidlStartSiteLink(String arg0) {
         Driver.getDriver().get(ConfigReader.getProperty(arg0));
     }

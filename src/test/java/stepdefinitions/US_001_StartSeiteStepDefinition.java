@@ -3,11 +3,11 @@ package stepdefinitions;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
-import pages.LidlPage;
+import pages.LidlLoginPage;
 
 public class US_001_StartSeiteStepDefinition {
 
-    LidlPage lidlPage = new LidlPage();
+    LidlLoginPage lidlPage = new LidlLoginPage();
 
     @And("Die Startseite_Menu wird angezeigt.")
     public void dieStartseite_MenuWirdAngezeigt() {
