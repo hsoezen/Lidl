@@ -1,9 +1,6 @@
 package pages;
 
-import org.openqa.selenium.WebDriver;
-
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -11,10 +8,10 @@ import utilities.Driver;
 
 import java.util.List;
 
-public class LidlPage {
+public class LidlLoginPage {
 
 
-    public LidlPage(){
+    public LidlLoginPage(){
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
@@ -23,9 +20,6 @@ public class LidlPage {
 
     @FindBy(xpath = "//ol[@class='n-header__main-navigation n-header__navigation-list n-header__subnavigation-list']")
     public WebElement startSeiteMenuKopfZeile;
-
-    @FindBy(xpath = "//ol[@class='n-header__main-navigation n-header__navigation-list n-header__subnavigation-list']//span")
-    public List<WebElement> menuOptions;
 
     @FindBy(xpath = "//ol[@class='n-header__user-navigation']//a")
     public List<WebElement> topMenu;
@@ -153,8 +147,5 @@ public class LidlPage {
 
     @FindBy(className = "error_EmailVerificationCode")
     public WebElement ungueltigeEmailCodeMeldung;
-
-
-
 
 }

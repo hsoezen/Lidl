@@ -7,7 +7,7 @@ import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import pages.LidlPage;
+import pages.LidlLoginPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
@@ -15,7 +15,7 @@ import java.time.Duration;
 
 public class US_002_LoginStepDefinition {
 
-    LidlPage lidlPage = new LidlPage();
+    LidlLoginPage lidlPage = new LidlLoginPage();
     @When("Der User klickt auf Mein Konto-Button.")
     public void der_user_klickt_auf_mein_konto_button() {
         for (WebElement meinKonto: lidlPage.topMenu

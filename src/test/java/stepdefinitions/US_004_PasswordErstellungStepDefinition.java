@@ -5,12 +5,12 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import pages.LidlPage;
+import pages.LidlLoginPage;
 import utilities.Driver;
 
 public class US_004_PasswordErstellungStepDefinition {
 
-    LidlPage lidlPage = new LidlPage();
+    LidlLoginPage lidlPage = new LidlLoginPage();
     @When("Der User gibt ein Paswort {string} ein.")
     public void der_user_gibt_ein_paswort_ein(String string) {
         lidlPage.registirierungPaswortTextFeld.sendKeys(string);

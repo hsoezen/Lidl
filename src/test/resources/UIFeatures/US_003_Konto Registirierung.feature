@@ -2,7 +2,7 @@ Feature: Als a User möchte ich Konto erstellen.
 
   Scenario: TC_001 Der User kann mit gueltigen Daten ein Konto registirieren.
 
-    When Der User open Lidl-StartSite "Lidl_Startseite" link
+    When Der User oeffnet Lidl-StartSite "Lidl_Startseite" link
     And Der User klickt auf Zustimmen-Button.
     And Der User klickt auf Mein Konto-Button.
     And Der User klickt auf Registirieren_button.
