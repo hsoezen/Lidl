@@ -3,12 +3,12 @@ Feature: Als ein User kann ich Online als Gast bestellen
 
     When Der User oeffnet Lidl-StartSite "Lidl_Startseite" link
     And Der User klickt auf Zustimmen-Button.
-    And Der User klickt auf "Haushalt & Küche" Unterkategorie.
-    And Der User klickt auf "Haushalt" UnterUnterkategorie.
-    And Der User waehlt "Staubsauger" aus UnterUnterkategorie aus.
-    And Der User waehlt "AEG Akkusauger »CX7-2-45MÖ«, 2-in-1" produkt
+    And Der User klickt auf "Garten & Balkon" Unterkategorie.
+    And Der User klickt auf "Grills & Grill-Zubehör" UnterUnterkategorie.
+    And Der User waehlt "Holzkohlegrills" aus UnterUnterkategorie aus.
+    And Der User waehlt "GRILLMEISTER Holzkohlegrill »AG 34 C1«, elektrisch, mit aktiver Belüftung" produkt
     And Der User waehlt eine Farbe, wenn Auswahlmöglichkeit gibt.
-    And Der User waehlt Stueckzahl aus der Stueck-Dropdownmenu als 1 aus.
+    And Der User waehlt Stueckzahl aus der Stueck-Dropdownmenu als 2 aus.
     And Der User klickt auf In Den Warenkorb-Button.
     Then Der User sieht ausgewaehltes Produkt im Warenkorb.
 

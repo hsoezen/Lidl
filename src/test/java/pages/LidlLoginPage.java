@@ -23,6 +23,9 @@ public class LidlLoginPage {
 
     @FindBy(xpath = "//ol[@class='n-header__user-navigation']//a")
     public List<WebElement> topMenu;
+
+    @FindBy(xpath = "//p[text()='Mit deinem Lidl- oder Lidl-Plus Konto anmelden!']")
+    public WebElement howerOverMenu;
     @FindBy(id = "field_EmailOrPhone")
     public WebElement emailOderHandyNummerTextFeld;
     @FindBy(xpath = "//*[text()=' Weiter ']")
@@ -147,5 +150,20 @@ public class LidlLoginPage {
 
     @FindBy(className = "error_EmailVerificationCode")
     public WebElement ungueltigeEmailCodeMeldung;
+
+    @FindBy(xpath = "//a[text()='Anmelden']")
+    public WebElement AnmeldeButton;
+
+    @FindBy(xpath = "//a[text()='Meine Bestellungen']")
+    public WebElement meineBestellungen;
+
+    @FindBy(xpath = "//a[text()='Abmelden']")
+    public WebElement AbmeldeButton;
+
+    @FindBy(xpath = "//span[@class='m-icon m-icon--hook']")
+    public WebElement MeinKontoHaken;
+
+    @FindBy(xpath = "//span[@class='n-header__user-navigation-logout-icon']")
+    public WebElement MeinKontoKreuz;
 
 }

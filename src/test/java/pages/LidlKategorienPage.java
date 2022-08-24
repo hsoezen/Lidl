@@ -5,6 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
+import javax.xml.bind.annotation.XmlID;
 import java.util.List;
 
 public class LidlKategorienPage {
@@ -70,6 +71,33 @@ public class LidlKategorienPage {
     @FindBy(xpath = "//div[@class='n-footer']//span[@class='n-footer__bottom-banner-close-button']")
     public WebElement Werbungschliessen;
 
-    @FindBy(xpath = "(//ul[@class='s-facet__list'])[4]//li")
+    @FindBy(xpath = "(//ul[@class='s-facet__list'])[3]//li")
     public List<WebElement> MarkenList;
+
+    @FindBy(xpath = "(//ol[@class='ATheHeroStage__Tabs m-ux-slider-track-distances-8'])[1]//li")
+    public List<WebElement> querKategorien;
+
+    @FindBy(xpath = "//ol[@class='ACampaignGrid']//li[@class='ACampaignGrid__item ACampaignGrid__item--product']//h2")
+    public List<WebElement> ProdukteInUnserTestErgebnisse;
+
+    @FindBy(xpath = "(//ol[@class='n-header__main-navigation n-header__main-navigation--sub'])[2]//li")
+    public List<WebElement> UnterkategorieFilialAngebote;
+
+    @FindBy(xpath = "//ul[@class='DesktopNavBar_sidebar__list__TCxq9']//li")
+    public List<WebElement> ProspekteSorten;
+
+    @FindBy(xpath = "//div[@class='Category_category__2ZWqw']")
+    public List<WebElement> ProspekteNachKategorie;
+
+    @FindBy(xpath = "//div[@class='Flyer_flyer__image_wrapper__1z6mS']")
+    public List<WebElement> Prospekte;
+
+    @FindBy(xpath = "//h3[@class='Flyer_flyer__headline__1tt0l']")
+    public List<WebElement> NamenDerProspekte;
+
+    @FindBy(xpath = "//h2[@class='Flyer_flyer__title__2Zkrz']")
+    public List<WebElement> TitelOderDatumDerProspekte;
+
+    @FindBy(xpath = "//a[@class='Flyer_flyer__download_icon__2XwnZ']")
+    public List<WebElement> herunterladenIkone;
 }
