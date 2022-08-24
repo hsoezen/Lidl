@@ -157,9 +157,11 @@ public class US_006_EinkaufenStepDefinition {
     }
 
     @And("Der User waehlt Marke {string} aus der Markenliste aus.")
-    public void derUserWaehltMarkeAusDerMarkenlisteAus(String arg0) {
+    public void derUserWaehltMarkeAusDerMarkenlisteAus(String arg0) throws InterruptedException {
+
         for (WebElement marke:kategorienPage.MarkenList
              ) {
+
             if(marke.getText().contains(arg0)){
                 marke.click();
                 break;
@@ -171,6 +173,9 @@ public class US_006_EinkaufenStepDefinition {
     public void derUserSiehtDassAlleMarkenSind(String arg0) {
         for (WebElement produkt:kategorienPage.produkte
         ) {
+            System.out.println(produkt.getText());
+            System.out.println(arg0);
+            System.out.println("222222");
             if(produkt.getText().contains(arg0)){
                 System.out.println("Das Produkt ist eine Marke von "+arg0+".");
             }else{

@@ -45,6 +45,7 @@ public class US_002_LoginStepDefinition {
     @And("Der User klickt auf Weiter\\(Passwort)-Button.")
     public void derUserKlicktAufWeiterPasswortButton() throws InterruptedException {
         lidlPage.weiterButtonPassword.click();
+
     }
     @Then("Der User sieht {string} Erfolg-Meldung.")
     public void der_user_sieht_meldung(String string) {

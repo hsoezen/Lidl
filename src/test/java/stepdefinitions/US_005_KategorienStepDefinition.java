@@ -55,7 +55,7 @@ public class US_005_KategorienStepDefinition {
         for (WebElement options : kategorienPage.option
         ) {
             if (options.getText().equals(string)) {
-                //options.click();
+                options.click();
                 break;
             }
         }
@@ -65,7 +65,7 @@ public class US_005_KategorienStepDefinition {
     public void derUserKlicktAufUnterkategorie(String arg0) {
         for (WebElement kategorie : kategorienPage.KategorienList
         ) {
-            if (kategorie.getText().equals(arg0)) {
+            if (kategorie.getText().trim().equals(arg0)) {
                 kategorie.click();
                 break;
             }
